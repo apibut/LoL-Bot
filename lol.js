@@ -31,8 +31,8 @@ const vcard = 'BEGIN:VCARD\n'  // Jangan di ubah biar ga error
 //Setingan\\
 apikey = 'RiuBoy' 
 prefix = 'c' 
-owner = '62814622392081' 
-cr = 'LoL-Human Team'
+owner = '6281325714976' 
+cr = 'Mr.1541'
 //Setingan\\
 //------LOAD-------\\
 const premium = JSON.parse(fs.readFileSync('./database/user/premium.json'))
