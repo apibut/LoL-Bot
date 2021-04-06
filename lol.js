@@ -30,7 +30,7 @@ const vcard = 'BEGIN:VCARD\n'  // Jangan di ubah biar ga error
             + 'END:VCARD' // jangan di ubah
 //Setingan\\
 apikey = 'RiuBoy' 
-prefix = 'c' 
+prefix = 'P' 
 owner = '6281325714976' 
 cr = 'Mr.1541'
 //Setingan\\
