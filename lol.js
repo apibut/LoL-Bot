@@ -267,9 +267,6 @@ case 'menu':
                     }
                     lolteam.sendMessage(from, help(prefix, pushname2,  premi, uptime, tanggal, pepolu), text, ini_csreply)
                     break
-case 'bot': 
-lolteam.sendImageAsSticker(from, '/lib/1617835492428.jpg') 
-break
 		//DAFTAR\\
 		case 'daftar':
                 if (isRegistered) return  reply(ind.rediregis())
