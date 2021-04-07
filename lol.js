@@ -235,6 +235,7 @@ async function starts() {
 
             switch (command) {
                 case 'help':
+                case 'menu':
 		if (!isRegistered) return reply(ind.noregis())
                     var punya_wa = "0@s.whatsapp.net"
                     var ini_text = (cr)
@@ -294,9 +295,6 @@ async function starts() {
                     console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'))
                 }
 		break
-                case 'bot': 
-                lolteam.sendImageAsSticker(from, '/lib/1617835492428.jpg') 
-                break
 		//{TOD}\\
 		case 'truth':
 		if (!isRegistered) return reply(ind.noregis())
