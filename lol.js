@@ -723,6 +723,27 @@ async function starts() {
                     ini_txt += `Isya : ${get_result.isya}`
                     reply(ini_txt)
                     break
+case'play'
+           case 'playmp3':
+           case 'musik':
+                try {
+	if (!isPrem) return reply('AND BUKAN USER PREM JIKA MAU JADI PREM KETIK cowner')
+		lolteam.updatePresence(from, Presence.recording) 
+                reply(mess.wait)
+                play = body.slice(6)
+                anu = await fetchJson(`https://fzn-gaz.herokuapp.com/api/ytplay2?judul=${play}`)
+               if (anu.error) return reply(anu.error)
+                 infomp3 = `╭─「 *TIMELINE PLAY MP3* 」\n│• *Judul:* ${anu.title}\n│• *Ukuran:* ${anu.size}\n│\n│*TUNGGU SEBENTAR LAGI DIKIRIM*\n│ *MOHON JANGAN SPAM YA BEB*\n╰─────────────────────`
+                buffer = await getBuffer(anu.image)
+                lagu = await getBuffer(anu.result.replace('fzn-gas','fzn-gaz'))
+                lolteam.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
+                lolteam.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
+                await limitAdd(sender) 
+                } catch {
+					reply(mess.error.bug)
+					}
+					await limitAdd(sender) 
+                break
 
                     // Downloader //
                 case 'ytplay':
