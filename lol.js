@@ -294,9 +294,9 @@ async function starts() {
                     console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'))
                 }
 		break
-case 'bot': 
-lolteam.sendImageAsSticker(from, '/lib/1617835492428.jpg') 
-break
+                case 'bot': 
+                lolteam.sendImageAsSticker(from, '/lib/1617835492428.jpg') 
+                break
 		//{TOD}\\
 		case 'truth':
 		if (!isRegistered) return reply(ind.noregis())
