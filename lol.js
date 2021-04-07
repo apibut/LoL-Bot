@@ -234,7 +234,6 @@ async function starts() {
             if (isGroup && isCmd) console.log(color(time, "white"), color("[ COMMAND ]", "aqua"), color(budy, "white"), "from", color(sender.split('@')[0], "yellow"), "in", color(groupName, "yellow"))
 
             switch (command) {
-case 'menu':
                 case 'help':
 		if (!isRegistered) return reply(ind.noregis())
                     var punya_wa = "0@s.whatsapp.net"
